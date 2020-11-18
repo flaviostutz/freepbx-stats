@@ -1,0 +1,11 @@
+version: "3"
+services:
+  datascience-tools:
+    image: flaviostutz/datascience-tools
+    ports:
+      - 8888:8888
+      - 6006:6006
+    volumes:
+      - ./notebooks:/notebooks
+    environment:
+      - JUPYTER_TOKEN=flaviostutz
